@@ -1,0 +1,174 @@
+/* Reset default margins */
+/* body {
+    margin: 0;
+    overflow-x: hidden;
+  } */
+  
+  .portfolio__container {
+    position: relative;
+  }
+  
+  .projects__wrapper {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .projects__container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    column-gap: 10rem;
+    padding: 5rem;
+  }
+  
+   .project {
+    /* flex: 0 0 100vw; */
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    padding: 3rem;
+    color: white;
+    position: relative;
+    display: flex;
+    background-color: #3c3c3c;
+    border-radius: 20px;
+    column-gap: 2rem;
+  } 
+   .project__video {
+      width: 650px;
+      border-radius: 20px;
+   }
+   .project__content{
+    font-size: 12px;
+    width: 50%;
+   }
+  /* Project-specific colors */
+  .project1 { background: #2c3e50; }
+  .project2 { background: #e74c3c; }
+  .project3 { background: #3498db; }
+  .project4 { background: #1abc9c; }
+  .project5 { background: #9b59b6; }
+  /* .portfolio__container {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #0f0f0f;
+    color: white;
+  }
+  
+  .section__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .section__subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    display: block;
+  } */
+  
+  /* .projects__wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+  }
+  
+  .projects__container {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+  } */
+  
+  /* .project {
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.1);
+  } */
+  .project__title{
+    font-size: var(--h2-font-size);
+  }
+
+  
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+  .project__video {
+    width: 450px;
+    border-radius: 20px;
+ }
+@media screen and (max-width: 992px) {
+  .project__video {
+    width: 500px;
+    border-radius: 20px;
+ }
+
+}
+@media screen and (max-width: 890px) {
+  .project__video {
+    width: 400px;
+    border-radius: 20px;
+ }
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .project {
+    /* flex: 0 0 100vw; */
+    height: 70vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+  } 
+  .project__content{
+    font-size: 12px;
+    width: 70%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+  .project__content{
+    width: 90%;
+   }
+   .project__video{
+    border-radius: 15px;
+   }
+}
+
+/* For small devices */
+@media screen and (max-width: 450px) {
+  .project__video {
+    width: 90%;
+    border-radius: 12px;
+    
+ }
+ .project{
+  padding: 1rem;
+  width: 93vw;
+ }
+
+  
+}
+@media screen and (max-width: 350px) {
+  .project{
+    padding: .5rem;
+  }
+}
