@@ -5,8 +5,16 @@
 }
 .about__img {
   width: 350px;
+  /* height: 350px; */
   border-radius: 1.5rem;
   justify-self: center;
+}
+.img_container{
+  width: 350px;
+  height: 350px;
+  background: url(../../assets/about.jpg);
+  border-radius: 1.5rem;
+  /* justify-self: center; */
 }
 .about__info {
   grid-template-columns: repeat(3, 140px);
